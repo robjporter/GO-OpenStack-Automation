@@ -1,0 +1,19 @@
+`{
+    "subnet": {
+        "name": "` + subnetname + `",
+        "enable_dhcp": ` + strconv.FormatBool(subnetDHCP) + `,
+        "network_id": "` + networkid + `",
+        "tenant_id": "` + tenantid + `",
+        "dns_nameservers": ["` + subnetDNS + `"],
+        "allocation_pools": [
+            {
+                "start": "` + subnetDHCPStart + `",
+                "end": "` + subnetDHCPEnd + `"
+            }
+        ],
+        "host_routes": [],
+        "ip_version": 4,
+        "gateway_ip": "` + subnetGateway + `",
+        "cidr": "` + subnetCIDR + `"
+    }
+}`

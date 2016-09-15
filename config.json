@@ -1,0 +1,26 @@
+{
+    "node": {
+        "url": "",
+        "admin": {
+            "password": ""
+        }
+    },
+    "create": {
+        "tenant": {
+            "name": "",
+            "username": "",
+            "password": "",
+            "role": "_member_",
+            "ip": "10.52.208.0/24",
+            "networks": [
+                {"type":"private","name":"WEB-Internal1","external":false,"dhcp":true,"dns":"192.168.128.1","ipv4":true,"cidr": "192.168.100.0/24","dhcpstart": "192.168.100.2","dhcpend": "192.168.100.254"},
+                {"type":"private","name":"APP-Internal2","external":false,"dhcp":true,"dns":"192.168.128.1","ipv4":true,"cidr": "192.168.101.0/24","dhcpstart": "192.168.101.2","dhcpend": "192.168.101.254"},
+                {"type":"private","name":"DB-Internal3","external":false,"dhcp":true,"dns":"192.168.128.1","ipv4":true,"cidr": "192.168.102.0/24","dhcpstart": "192.168.102.2","dhcpend": "192.168.102.254"},
+                {"type":"public","name":"Public","external":true,"dhcp":true,"dns":"192.168.128.1","ipv4":true,"cidr": "192.168.128.0/24","dhcpstart": "192.168.128.220","dhcpend": "192.168.128.229"}
+            ],
+            "flavours": [
+                {"name":"test","type":"","enabled":true,"description":""}
+            ]
+        }
+    }
+}
